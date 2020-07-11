@@ -1,0 +1,385 @@
+/*-------------------------------------------------------------------------Loader */
+.LoaderContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #252525;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.Loader {
+  width: 2.5em;
+  height: 2.5em;
+  border: 0.25em solid #00ccff;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: loader 1.2s linear infinite;
+}
+@keyframes loader {
+  to {
+    transform: rotate(360deg);
+  }
+}
+/*-------------------------------------------------------------------------ScrollBar */
+html {
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em;
+}
+body::-webkit-scrollbar-track {
+  background: #252525;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #00ccff;
+}
+#myBtn {
+  font-weight: bolder;
+  color: #fff;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  height: 4em;
+  width: 4em;
+  border-radius: 50%;
+  transition: ease-in-out 0.2s;
+  background: -webkit-linear-gradient(0deg, #6000ff -50%, #00ccff 150%);
+  opacity: 0;
+}
+#myBtn:hover {
+  transform: scale(1.1);
+}
+.ToTop:hover {
+  transform: none;
+}
+/* -------------------------------------------------------------------------Body */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow", "Calibri", sans-serif;
+  color: #252525;
+}
+/* -------------------------------------------------------------------------Container */
+.ContainerOne {
+  padding: 5em 10em;
+  background-color: #eeeeee;
+}
+.ContainerTwo {
+  padding: 5em 10em;
+  background-color: #fff;
+}
+/* -------------------------------------------------------------------------Header */
+.Header {
+  text-align: center;
+  margin-bottom: 5em;
+}
+.Heading {
+  font-weight: 900;
+  background: -webkit-linear-gradient(0deg, #6000ff 20%, #00ccff 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Line {
+  width: 10em;
+  height: 0.15em;
+  border-radius: 0.5em;
+  background: linear-gradient(to right, #6000ff 0%, #00ccff 120%);
+  border-style: none;
+}
+.Paragraph {
+  line-height: 1.5em;
+  margin: 0;
+}
+/* -------------------------------------------------------------------------Flex */
+.FlexContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.FlexItemOne {
+  padding-right: 2.5em;
+}
+.FlexItemTwo {
+  padding-left: 2.5em;
+}
+/* -------------------------------------------------------------------------Content */
+.Title {
+  text-align: center;
+  font-weight: 800;
+  background: -webkit-linear-gradient(0deg, #6000ff 0%, #00ccff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.Link {
+  color: #6000ff;
+}
+a {
+  text-decoration: none;
+}
+.ProgramRight {
+  text-align: right;
+}
+/* -------------------------------------------------------------------------Footer */
+.Footer {
+  margin-top: 5em;
+  text-align: center;
+}
+.More {
+  font-size: 1.25em;
+  font-weight: 900;
+  margin: 0;
+}
+.FooterContainer {
+  padding: 2.5em 0em;
+}
+/* -------------------------------------------------------------------------Landing Page */
+#LandingPage {
+  padding: 0em 10em;
+  background-image: url(Images/glenn-carstens-peters-P1qyEf1g0HU1-unsplash.jpg);
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+#GraphicDesign {
+  margin: 0;
+  padding-top: 5em;
+  font-size: 1.6em;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  color: #eeeeee;
+}
+#Portfolio {
+  margin: 0em;
+  margin-top: -0.2em;
+  font-size: 6em;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  background: -webkit-linear-gradient(0deg, #6000ff 40%, #00ccff 60%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#CreatedBy {
+  margin: 0;
+  margin-top: -0.5em;
+  text-indent: 5em;
+  font-size: 1.3em;
+  font-style: italic;
+  letter-spacing: 0.05em;
+  color: #aaaaaa;
+}
+#Signature {
+  height: 5.5em;
+  transform: rotate(-15deg);
+  position: absolute;
+  top: 12.5em;
+  left: 35em;
+  opacity: 0.5;
+}
+#AboutPortfolio {
+  padding-top: 1em;
+  width: 60%;
+  color: #aaaaaa;
+  text-indent: 3em;
+  line-height: 1.4em;
+}
+nav ul li {
+  list-style-type: none;
+  padding: 0.25em 0;
+}
+nav ul li a {
+  padding: 0.125em 1em;
+  color: #eeeeee;
+  font-weight: bold;
+  letter-spacing: 0.025em;
+  background: linear-gradient(to right, #6000ff 0%, #00ccff 200%);
+  transition: ease-in-out 0.2s;
+}
+nav ul li a:hover {
+  padding: 0.125em 2em;
+  color: #fff;
+}
+
+/* -------------------------------------------------------------------------About */
+#Pozdrav {
+  font-size: 3em;
+  font-weight: 900;
+  margin: 0em;
+  margin-bottom: 0.5em;
+}
+#Pozdrav::after {
+  content: "Pozdrav!";
+  animation: animationone 9s ease-in-out infinite;
+}
+@keyframes animationone {
+  20% {
+    content: "Ko sam ja?";
+  }
+  40% {
+    content: "Ja sam...";
+  }
+  60% {
+    content: "Papić Dušan!";
+  }
+  80% {
+    content: "Grafički dizajner!";
+  }
+}
+#Avatar {
+  height: 10em;
+  border-radius: 50%;
+  box-shadow: 0em 0em 0em 1em #6000ff;
+  transition: ease-in-out 0.2s;
+}
+#Avatar:hover {
+  transform: scale(1.2);
+  box-shadow: none;
+}
+#AutorFooter {
+  margin-top: 2.5em;
+}
+.Button {
+  margin: 0em 0.5em;
+  padding: 1em 0;
+  font-weight: bold;
+  border-radius: 1em;
+  color: #fff;
+  letter-spacing: 0.025em;
+  background: linear-gradient(to right, #6000ff 0%, #00ccff 200%);
+  transition: ease-in-out 0.2s;
+  display: inline-block;
+  width: 10em;
+}
+.Button:hover {
+  transform: scale(1.1);
+}
+.Icons {
+  padding-top: 2.5em;
+}
+.Contact {
+  font-size: 1.5em;
+  margin: 0em 0.5em;
+  transition: ease-in-out 0.2s;
+  background: -webkit-linear-gradient(0deg, #6000ff -100%, #00ccff 200%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+i:hover {
+  transform: scale(1.25);
+}
+/* -------------------------------------------------------------------------Logo Design */
+.LogoContainer {
+  padding-top: 7.5em;
+}
+.AboutLogo {
+  margin-top: -5em;
+}
+#Karadjordje {
+  padding-top: 3em;
+}
+#Finnector {
+  padding-top: 3em;
+}
+.LogoLeft {
+  width: 25em;
+}
+.LogoRight {
+  width: 25em;
+}
+.LogoFooter {
+  margin: 1em 1.5em;
+  height: 5em;
+  width: 7em;
+  transition: ease-in-out 0.2s;
+}
+.LogoFooter:hover {
+  transform: scale(1.5);
+}
+/* -------------------------------------------------------------------------Photo Manipulation */
+.PhotoLeft {
+  height: 25em;
+  border-radius: 0.5em;
+  transform: rotate(-5deg);
+  transition: ease-in-out 0.2s;
+  z-index: 100;
+}
+.PhotoLeft:hover {
+  transform: scale(1.25);
+}
+.PhotoRight {
+  height: 25em;
+  border-radius: 0.5em;
+  transform: rotate(5deg);
+  transition: ease-in-out 0.2s;
+  z-index: 100;
+}
+.PhotoRight:hover {
+  transform: scale(1.25);
+}
+.PhotoFooter {
+  height: 10em;
+  border-radius: 1em;
+  transition: ease-in-out 0.2s;
+}
+.PhotoFooter:hover {
+  transform: scale(1.5);
+}
+/* -------------------------------------------------------------------------Poster Design */
+#FlexContainerLeft {
+  margin-right: 10em;
+}
+#FlexContainerRight {
+  margin-left: 10em;
+}
+/* -------------------------------------------------------------------------Icon Design */
+.IconContainer {
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  width: 10em;
+  height: 10em;
+}
+.IconsContainer {
+  text-align: center;
+}
+.Icon {
+  height: 5em;
+  transition: ease-in-out 0.2s;
+}
+.Icon:hover {
+  transform: scale(1.5);
+}
+/* -------------------------------------------------------------------------Footer */
+footer {
+  background: url(Images/glenn-carstens-peters-P1qyEf1g0HU1-unsplash.jpg);
+  background-size: cover;
+  background-position: bottom;
+  text-align: center;
+  padding: 2.5em;
+}
+.Credits {
+  margin: 0;
+  margin-bottom: 1em;
+  font-weight: 600;
+  color: #eeeeee;
+  text-align: center;
+}
+.SocialMedia {
+  color: #eeeeee;
+  font-size: 1.5em;
+  margin: 0em 0.5em;
+  transition: ease-in-out 0.2s;
+}
+
+@media only screen and (max-height: 550px) {
+  nav {
+    display: none;
+  }
+}

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="SVGs/Favicon.svg">
+    <script
+      src="https://kit.fontawesome.com/c005193ac6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" media="(min-width: 1280px)" href="stylesheet-desktop.css" />
+    <link rel="stylesheet" media="(min-width: 480px) and (max-width:1279px)" href="stylesheet-tablet.css" />
+    <link rel="stylesheet" media="(max-width: 479px)" href="stylesheet-mobile.css" />
+    <title>Dušan Papić</title>
+  </head>
+  <body>
+    <!---------------------------------------Loader----------------------------------------------->
+    <div class="LoaderContainer"><div class="Loader"></div></div>
+    <script>$(window).on("load",function(){
+      $(".LoaderContainer").fadeOut(1000);
+    })</script>
+    <!---------------------------------------Scroll to Top----------------------------------------------->
+    <button onclick="topFunction()" id="myBtn"><i class="fas fa-chevron-up ToTop"></i></button>
+    <script>
+      var mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () { scrollFunction() };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 630 || document.documentElement.scrollTop > 630) {
+          mybutton.style.opacity = "1";
+          mybutton.style.cursor = "pointer";
+          mybutton.style.pointerEvents = "auto"
+        } else {
+          mybutton.style.opacity = "0";
+          mybutton.style.cursor = "default";
+          mybutton.style.pointerEvents = "none"
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
+    <!---------------------------------------Landing Page----------------------------------------------->
+    <div id="LandingPage">
+      <h3 id="GraphicDesign">GRAFIČKI DIZAJN</h3>
+      <h1 id="Portfolio">PORTFOLIO</h1>
+      <p id="CreatedBy">-By Dušan Papić</p>
+      <img src="SVGs/Dusan Papic Signature.svg" alt="" id="Signature" />
+      <p id="AboutPortfolio">
+        Ovaj dokument predstavlja vizuelnu prezentaciju grafičkog dizajnera. U
+        nastavku ćete videti primere radova koji će vam preciznije prikazati
+        stil i veštine koje dizajner poseduje. Imajte na umu da su ovo samo neki
+        od radova, a ne ceo repertoar kojim dizajner raspolaže...
+      </p>
+      <nav>
+        <ul>
+          <li><a href="#AboutContainer">#AUTOR</a></li>
+          <li><a href="#LogoContainer">#LOGO DIZAJN</a></li>
+          <li><a href="#PhotoContainer">#FOTO MANIPULACIJA</a></li>
+          <li><a href="#PosterContainer">#POSTER DIZAJN</a></li>
+          <li><a href="#IconContainer">#DIZAJN IKONICA</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!---------------------------------------About----------------------------------------------->
+    <div class="ContainerOne" id="AboutContainer">
+      <div class="Header">
+      <h1 class="Heading">#AUTOR</h1>
+      <hr class="Line"/></div>
+      <div class="FlexContainer">
+        <div class="FlexItemOne Avatar">
+          <img src="Images/img_20191224_150430.jpg" alt="" id="Avatar" />
+        </div>
+        <div class="FlexItemTwo">
+          <p id="Pozdrav"></p>
+          <p class="Paragraph">
+            Rođen sam 19. Marta 1995. godine u Užicu. Trenutno sam apsolvent
+            informacionih tehnologija na Fakultetu tehničkih nauka u Čačku.
+            Bavim se grafičkim dizajnom od Januara 2016. godine. Za ispoljavanje
+            kreativnih ideja koristim Adobe kreativno okruženje (Adobe
+            Photoshop, Adobe Illustrator, Adobe InDesign i Adobe XD) kao i HTML5
+            i CSS3 za web dizajn.
+          </p>
+        </div>
+      </div>
+      <div class="Footer" id="AutorFooter">
+        <a href="mailto:dusanpapic95@gmail.com" class="Button">Kontakt</a>
+        <a
+          href="Source/Dusan Papic - Graficki Dizajner 2.2.pdf"
+          target="_blank"
+          class="Button"
+          >Curriculum Vitae</a
+        >
+        <div class="Icons">
+          <a href="https://www.facebook.com/aPanicSpud" target="_blank"><i class="fab fa-facebook-square Contact"></i></a>
+          <a href="https://www.instagram.com/apanicspud/" target="_blank"><i class="fab fa-instagram Contact"></i></a>
+          <a href="mailto:dusanpapicpapa@yahoo.com"><i class="far fa-envelope Contact"></i></i></a>
+          <a href="https://www.facebook.com/messages/t/aPanicSpud" target="_blank"><i class="fab fa-facebook-messenger Contact"></i></a>
+        </div>
+      </div>
+    </div>
+    <!---------------------------------------Logo Design----------------------------------------------->
+    <div class="ContainerTwo" id="LogoContainer">
+      <div class="Header">
+      <h1 class="Heading">#LOGO DIZAJN</h1>
+      <hr  class="Line"/>
+      <p class="Paragraph">
+        Kreiranje vizuelnog identiteta kompanije, pravnog ili fizičkog lica,
+        događaja...na osnovu smernica datih od strane nalogodavca i
+        istraživanja. <br />Primeri koje ćete videti su dizajnirani za stvarne
+        kompanije i poslodavce na javnim konkursima i freelance platformama.
+      </p></div>
+      <!-- Finnector -->
+      <div class="FlexContainer FlexOrder" id="Finnector">
+        <div class="FlexItemOne">
+          <img src="SVGs/Finnector.svg" alt="" class="LogoLeft" />
+          <p class="ProgramLeft">
+            Program Adobe Illustrator CC<br />Godina 2017.
+          </p>
+        </div>
+        <div class="FlexItemTwo AboutLogo">
+          <h1 class="Title">"Finnector"</h1>
+          <p class="Paragraph">
+            U pitanju je logo rešenje za Finnector platformu koja povezuje
+            finansijske stručnjake sa strateškim partnerima.<br />Link ka javnom
+            konkursu:<br />
+            <a
+              class="Link"
+              href="https://99designs.co.uk/logo-design/contests/design-modern-memorable-logo-tech-resource-connect-financial-709910/brief"
+              target="_blank"
+              >https://99designs.co.uk/logo-design/contests/design-modern-memorable-logo-tech-resource-connect-financial-709910/brief</a
+            >
+          </p>
+        </div>
+      </div>
+      <!-- DanceOne  -->
+      <div class="FlexContainer LogoContainer">
+        <div class="FlexItemOne AboutLogo">
+          <h1 class="Title">"DanceOne"</h1>
+          <p class="Paragraph">
+            Sledeći logo je dizajniran za platformu DanceOne. To je platforma
+            koja obezbeđuje tehnologiju i digitalne medija servise za
+            osnaživanje plesnih događaja.<br />Link ka javnom konkursu:<br />
+            <a
+              class="Link"
+              href="https://99designs.com/logo-design/contests/design-modern-logo-tech-start-up-danceone-829470/brief"
+              target="_blank"
+              >https://99designs.com/logo-design/contests/design-modern-logo-tech-start-up-danceone-829470/brief</a
+            >
+          </p>
+        </div>
+        <div class="FlexItemTwo">
+          <img src="SVGs/DanceOne.svg" alt="" class="LogoRight" />
+          <p class="ProgramRight">
+            Program Adobe Illustrator CC<br />Godina 2018.
+          </p>
+        </div>
+      </div>
+      <!-- Watch It Work  -->
+      <div class="FlexContainer LogoContainer FlexOrder">
+        <div class="FlexItemOne">
+          <img src="SVGs/Watch it Work.svg" alt="" class="LogoLeft" />
+          <p class="ProgramLeft">
+            Program Adobe Illustrator CC<br />Godina 2019.
+          </p>
+        </div>
+        <div class="FlexItemTwo AboutLogo">
+          <h1 class="Title">"Watch It Work"</h1>
+          <p class="Paragraph">
+            Watch it Work je platforma za deljenje informacija o poslovima.
+            Poslovi se dele preko platforme u obliku video materijala.<br />Link
+            ka javnom konkursu:<br />
+            <a
+              class="Link"
+              href="https://99designs.com/logo-design/contests/watch-work-video-job-posting-platform-919506/brief"
+              target="_blank"
+              >https://99designs.com/logo-design/contests/watch-work-video-job-posting-platform-919506/brief</a
+            >
+          </p>
+        </div>
+      </div>
+      <!-- Karadjordje  -->
+      <div class="FlexContainer" id="Karadjordje">
+        <div class="FlexItemOne">
+          <h1 class="Title">"Caffe & Restaurant Karađorđe”</h1>
+          <p class="Paragraph">
+            Logo je dizajniran za Caffe & Restaurant “Karađorđe” Kosjerić.
+            Objekat se nalazi u Karađorđevoj 65, 31260 Kosjerić.
+            <br />Link ka društvenim mrežama:<br />
+            <a
+              class="Link"
+              href="https://www.facebook.com/cafferestaurantkaradjordje/"
+              target="_blank"
+              >https://www.facebook.com/cafferestaurantkaradjordje/</a
+            ><br /><a
+              class="Link"
+              href="https://www.instagram.com/cafferestaurantkaradjordje/"
+              target="_blank"
+              >https://www.instagram.com/cafferestaurantkaradjordje/</a
+            >
+          </p>
+          <p class="ProgramLeft">
+            Program Adobe Illustrator CC<br />Godina 2020.
+          </p>
+        </div>
+        <div class="FlexItemTwo">
+          <img
+            src="SVGs/Caffe & Restaurant Karađorđe - Bela Pozadina.svg"
+            alt=""
+            class="LogoRight Karadjordje"
+          />
+        </div>
+      </div>
+      <!-- Scalable Robots  -->
+      <div class="FlexContainer LogoContainer FlexOrder">
+        <div class="FlexItemOne">
+          <img src="SVGs/ScalableRobots.svg" alt="" class="LogoLeft" />
+          <p class="ProgramLeft">
+            Program Adobe Illustrator CC<br />Godina 2018.
+          </p>
+        </div>
+        <div class="FlexItemTwo AboutLogo">
+          <h1 class="Title">"Scalable Robots"</h1>
+          <p class="Paragraph">
+            Scalable Robots je kompanija specijalizovana za integrisanje
+            kolaborativnih robota u industrijske linije.<br />Link ka javnom
+            konkursu:<br />
+            <a
+              class="Link"
+              href="https://99designs.com/logo-design/contests/robotics-company-needs-logo-835622/brief"
+              target="_blank"
+              >https://99designs.com/logo-design/contests/robotics-company-needs-logo-835622/brief</a
+            >
+          </p>
+        </div>
+      </div>
+      <!-- Other  -->
+      <div class="Footer Other">
+        <p class="More">JOŠ PRIMERA:</p><div class="FooterContainer">
+        <img src="SVGs/mySE 1.0.svg" alt="" class="LogoFooter">
+        <img src="SVGs/The Mistics.svg" alt="" class="LogoFooter">
+        <img src="SVGs/John Wells Productions 1.0.svg" alt="" class="LogoFooter">
+        <img src="SVGs/Vinea 1.8.svg" alt="" class="LogoFooter">
+        <img src="SVGs/The Perfect 9's.svg" alt="" class="LogoFooter">
+        <img src="SVGs/Horizonline 1.0.svg" alt="" class="LogoFooter">
+        <img src="SVGs/Air Restaurant.svg" alt="" class="LogoFooter">
+        <img src="SVGs/Craftskillz 1.1.svg" alt="" class="LogoFooter">
+        <img src="SVGs/STILL.svg" alt="" class="LogoFooter">
+        <img src="SVGs/J Paul Studio 4.svg" alt="" class="LogoFooter">
+        <img src="SVGs/Quickery 1.2.svg" alt="" class="LogoFooter">
+        <img src="SVGs/Touchpoint Tailor.svg" alt="" class="LogoFooter"></div>
+      </div>
+    </div>
+    <!---------------------------------------Photo Manipulation----------------------------------------------->
+    <div class="ContainerOne" id="PhotoContainer">
+      <div class="Header">
+      <h1 class="Heading">#FOTO MANIPULACIJA</h1>
+      <hr  class="Line"/>
+      <p class="Paragraph">
+        Obrada digitalne fotografije tako da se dobije potpuno nova slika
+        sastavljanjem i manipulacijom više različitih elemenata. Primeri koje
+        ćete videti su dizajnirani “za svoju dušu”, pretežno iz zabave, u
+        edukativne svrhe. Kao takve nemaju nikakvu komercijalnu vrednost.<br />Napomena:
+        Ja nisam originalni vlasnik fotografija korišćenih u mojim
+        manipulacijama, samim tim nemam pravo korišćenja u komercijalne svrhe.
+      </p></div>
+      <!-- Lost in Nature  -->
+      <div class="FlexContainer FlexOrder">
+        <div class="FlexItemOne">
+<img src="Images/Lost in Nature.jpg" alt="" class="PhotoLeft"></div>
+<div class="FlexItemTwo">
+  <h1 class="Title">"Lost in Nature"</h1>
+  <p>Izvorne fotografije:</p>
+  <p>Photo by Azlan Baharudin on Unsplash - <a class="Link" href="https://unsplash.com/photos/cmiuqPkLd-A"
+  target="_blank">https://unsplash.com/photos/cmiuqPkLd-A</a><br>
+Photo by Annie Spratt on Unsplash - <a href="https://unsplash.com/photos/zySqlrxouoY" class="Link" target="_blank">https://unsplash.com/photos/zySqlrxouoY</a><br>
+Photo by Patrick Hendry on Unsplash - <a href="https://unsplash.com/photos/ZkS4qcldEIU" class="Link" target="_blank">https://unsplash.com/photos/ZkS4qcldEIU</a><br>
+Photo by Annie Spratt on Unsplash - <a href="https://unsplash.com/photos/hX_hf2lPpUU" class="Link" target="_blank">https://unsplash.com/photos/hX_hf2lPpUU</a><br>
+Photo by Daiga Ellaby on Unsplash - <a href="https://unsplash.com/photos/JZ51o_-UOY8" class="Link" target="_blank">https://unsplash.com/photos/JZ51o_-UOY8</a><br>
+Photo by Kendal on Unsplash - <a href="https://unsplash.com/photos/TW2bfT_tWDI" class="Link" target="_blank">https://unsplash.com/photos/TW2bfT_tWDI</a>
+    </p>
+    <p class="ProgramLeft">
+      Program Adobe Photoshop CC<br />Godina 2020.
+    </p>
+  </div>
+</div>
+    <!-- Midnight Walk  -->
+    <div class="FlexContainer">
+      <div class="FlexItemOne">
+        <h1 class="Title">"Midnight Walk"</h1>
+        <p>Izvorne fotografije:</p>
+        <p>
+          Photo by Mak on Unsplash - <a class="Link" href="https://unsplash.com/photos/-GXt64A7e_g"
+            target="_blank">https://unsplash.com/photos/-GXt64A7e_g</a><br>
+          Photo by Kevin Mueller on Unsplash - <a href="https://unsplash.com/photos/uc-gCuMm93c"
+            class="Link" target="_blank">https://unsplash.com/photos/uc-gCuMm93c</a><br>
+          Photo by Luca Bravo on Unsplash - <a href="https://unsplash.com/photos/a_hPPrncGlQ"
+            class="Link" target="_blank">https://unsplash.com/photos/a_hPPrncGlQ</a>
+        </p>
+        <p class="ProgramLeft">
+          Program Adobe Photoshop CC<br />Godina 2020.
+        </p>
+      </div><div class="FlexItemTwo">
+        <img src="Images/Midnight Walk.jpg" alt="" class="PhotoRight"></div>
+    </div>
+    <div class="Footer Other">
+      <p class="More">JOŠ PRIMERA:</p><div class="FooterContainer">
+      <img src="Images/Prisoner of the Republic.jpg" alt="" class="PhotoFooter">
+      <img src="Images/Sleepy Beauty.jpg" alt="" class="PhotoFooter">
+      <img src="Images/Trapped in Time.jpg" alt="" class="PhotoFooter">
+      <img src="Images/Life.jpg" alt="" class="PhotoFooter">
+      <img src="Images/Bay Watcher.jpg" alt="" class="PhotoFooter">
+      <img src="Images/Gravity Anomaly.jpg" alt="" class="PhotoFooter">
+      <img src="Images/Dungeon.jpg" alt="" class="PhotoFooter">
+      <img src="Images/Queen of Dragons.jpg" alt="" class="PhotoFooter">
+      <img src="Images/Wheelers.jpg" alt="" class="PhotoFooter">
+      <img src="Images/Life.jpg Beauty.jpg" alt="" class="PhotoFooter">
+      <img src="Images/Sittin' in the Rain.jpg" alt="" class="PhotoFooter">
+      <img src="Images/Bloody Wedding.jpg" alt="" class="PhotoFooter">
+      <img src="Images/Ring.jpg" alt="" class="PhotoFooter"> </div>
+    </div>
+    </div>
+    <!---------------------------------------Poster Design----------------------------------------------->
+<div class="ContainerTwo" id="PosterContainer">
+  <div class="Header">
+  <h1 class="Heading">#POSTER DIZAJN</h1>
+<hr class="Line"/>
+<p class="Paragraph">
+  Kreiranje reklamnog materijala koji promoviše ideju, proizvod ili
+  događaj širokom javnom spektru.<br>
+  Primeri koje ćete videti su dizajnirani za promocije studentskih
+  žurki “City Pub” u Čačku.
+</p></div>
+<!-- 31.10.2018. -->
+<div class="FlexContainer FlexOrder" id="FlexContainerLeft">
+  <div class="FlexItemOne">
+    <img src="Images/18.10.31.jpg" alt="" class="PhotoLeft">
+  </div>
+  <div class="FlexItemTwo">
+    
+    <h1 class="Title">"Last Day of the Month at City Pub"</h1>
+    <p class="Paragraph">Info:</p>
+    <p class="Paragraph">Datum: 31.10.2018.<br>
+      Muzički gost: DJ MOOMBRAN<br>
+    Lokacija: "City Pub"<br>
+  Adresa: Gospodar Jovanova 22, 32000 Čačak<br>
+    Organizator: Pavlović Mirko</p>
+    <p class="ProgramLeft">
+      Program Adobe Photoshop CC<br />Godina 2018.
+    </p>
+  </div></div>
+  <!-- 16.11.2018. -->
+<div class="FlexContainer" id="FlexContainerRight">
+  <div class="FlexItemOne">
+    <h1 class="Title">"Friday Dance at City Pub"</h1>
+    <p class="Paragraph">Info:</p>
+    <p class="Paragraph">Datum: 16.11.2018.<br>
+    Lokacija: "City Pub"<br>
+    Adresa: Gospodar Jovanova 22, 32000 Čačak<br>
+    Organizator: Jovanović Laza</p>
+    <p class="ProgramLeft">
+      Program Adobe Photoshop CC<br />Godina 2018.
+    </p>
+  </div>
+  <div class="FlexItemTwo">
+    <img src="Images/18.11.16.jpg" alt="" class="PhotoRight">
+    </div>
+</div>
+<div class="Footer Other">
+  <p class="More">JOŠ PRIMERA:</p>
+  <div class="FooterContainer">
+    <img src="Images/18.11.07.jpg" alt="" class="PhotoFooter">
+    <img src="Images/18.11.14.jpg" alt="" class="PhotoFooter">
+    <img src="Images/19.01.30.jpg" alt="" class="PhotoFooter">
+    <img src="Images/18.11.21.jpg" alt="" class="PhotoFooter">
+    <img src="Images/18.12.07.jpg" alt="" class="PhotoFooter">
+    <img src="Images/18.12.12.jpg" alt="" class="PhotoFooter">
+    <img src="Images/18.12.21.jpg" alt="" class="PhotoFooter">
+  <img src="Images/18.12.15.jpg" alt="" class="PhotoFooter">
+  </div>
+</div>
+</div>
+    <!---------------------------------------Icon Design----------------------------------------------->
+    <div class="ContainerOne" id="IconContainer">
+      <div class="Header">
+      <h1 class="Heading">#DIZAJN IKONICA</h1>
+      <hr class="Line" />
+      <p class="Paragraph">
+        Dizajniranje ikonica koje se mogu koristiti na računarima ili
+        mobilnim uređajima.<br> Ikonice koje sam kreirao menjaju originalan
+        izgled ikonice određenog programa.<br>
+        Primeri koje ćete videti su dizajnirani isključivo za ličnu
+        upotrebu.
+      </p>
+    </div>
+  <div class="IconsContainer">
+    <div class="IconContainer">
+      <img src="SVGs/Chrome 2.0.svg" alt="" class="Icon">
+      <p class="IconTitle">Google Chrome</p>
+    </div>
+  <div class="IconContainer">
+    <img src="SVGs/Acestream 2.0.svg" alt="" class="Icon">
+    <p class="IconTitle">Acestream</p>
+  </div>
+  <div class="IconContainer">
+    <img src="SVGs/AIMP.svg" alt="" class="Icon">
+    <p class="IconTitle">AIMP</p>
+  </div>
+  <div class="IconContainer">
+    <img src="SVGs/BattleNet.svg" alt="" class="Icon">
+    <p class="IconTitle">BattleNet</p>
+  </div>
+  <div class="IconContainer">
+    <img src="SVGs/CCleaner.svg" alt="" class="Icon">
+    <p class="IconTitle">CCleaner</p>
+  </div>
+  <div class="IconContainer">
+    <img src="SVGs/Dota.svg" alt="" class="Icon">
+    <p class="IconTitle">DOTA 2</p>
+  </div>
+  <div class="IconContainer">
+    <img src="SVGs/Eclipse.svg" alt="" class="Icon">
+    <p class="IconTitle">Eclipse</p>
+  </div>
+  <div class="IconContainer">
+    <img src="SVGs/Edge.svg" alt="" class="Icon">
+    <p class="IconTitle">Microsoft Edge</p>
+  </div>
+  <div class="IconContainer">
+    <img src="SVGs/File Explorer.svg" alt="" class="Icon">
+    <p class="IconTitle">Microsoft File Explorer</p>
+  </div>
+  <div class="IconContainer">
+    <img src="SVGs/Illustrator.svg" alt="" class="Icon">
+    <p class="IconTitle">Adobe Illustrator</p>
+  </div>
+  <div class="IconContainer">
+    <img src="SVGs/InDesign.svg" alt="" class="Icon">
+    <p class="IconTitle">Adobe Indesign</p>
+  </div>
+  <div class="IconContainer">
+    <img src="SVGs/KMPlayer 6.svg" alt="" class="Icon">
+    <p class="IconTitle">KMPlayer</p>
+  </div>
+  <div class="IconContainer">
+    <img src="SVGs/Nvidia 2.0.svg" alt="" class="Icon">
+    <p class="IconTitle">GeForce Now</p>
+  </div>
+  <div class="IconContainer">
+    <img src="SVGs/Photoshop.svg" alt="" class="Icon">
+    <p class="IconTitle">Adobe Photoshop</p>
+  </div>
+  <div class="IconContainer">
+    <img src="SVGs/VirtualBox.svg" alt="" class="Icon">
+    <p class="IconTitle">VirtualBox</p>
+  </div>
+  <div class="IconContainer">
+    <img src="SVGs/Visual Studio Code.svg" alt="" class="Icon">
+    <p class="IconTitle">Visual Studio Code</p>
+  </div>
+  <div class="IconContainer">
+    <img src="SVGs/WoW 6.svg" alt="" class="Icon">
+    <p class="IconTitle">World of Warcraft</p>
+  </div>
+  <div class="IconContainer">
+    <img src="SVGs/xampp.svg" alt="" class="Icon">
+    <p class="IconTitle">xampp</p>
+  </div>
+  </div></div>
+      <!---------------------------------------Footer----------------------------------------------->
+<footer>
+  
+  <p class="Paragraph Credits">&copy; 2020.<br>Created & Designed By <a href="#AboutContainer" class="Link" id="DusanPapic">Dušan Papić</a></p>
+<div>
+  <a href="https://www.facebook.com/aPanicSpud" target="_blank"><i class="fab fa-facebook-square SocialMedia" id="Facebook"></i></a>
+  <a href="https://www.instagram.com/apanicspud/" target="_blank"><i class="fab fa-instagram SocialMedia" id="Instagram"></i></a>
+  <a href="mailto:dusanpapicpapa@yahoo.com"><i class="far fa-envelope SocialMedia" id="Email"></i></i></a>
+  <a href="https://www.facebook.com/messages/t/aPanicSpud" target="_blank"><i class="fab fa-facebook-messenger SocialMedia" id="Messenger"></i></a>
+</div>
+</footer>
+  </body>
+</html>

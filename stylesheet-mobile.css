@@ -1,0 +1,293 @@
+/*-------------------------------------------------------------------------Loader */
+.LoaderContainer {
+  width: 100%;
+  height: 100vh;
+  background-color: #252525;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Loader {
+  width: 2.5em;
+  height: 2.5em;
+  border: 0.25em solid #00ccff;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: loader 1.2s linear infinite;
+}
+@keyframes loader {
+  to {
+    transform: rotate(360deg);
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow", "Calibri", sans-serif;
+  color: #252525;
+}
+#myBtn {
+  display: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* -------------------------------------------------------------------------Container */
+.ContainerOne {
+  padding: 0em 1em;
+  background-color: #fff;
+}
+.ContainerTwo {
+  padding: 0em 1em;
+  background-color: #fff;
+}
+/* -------------------------------------------------------------------------Header */
+.Header {
+  padding-top: 2.5em;
+  text-align: center;
+  margin-bottom: 2.5em;
+}
+.Heading {
+  font-weight: 900;
+  background: -webkit-linear-gradient(0deg, #6000ff 20%, #00ccff 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+.Line {
+  width: 10em;
+  height: 0.15em;
+  border-radius: 0.5em;
+  background: linear-gradient(to right, #6000ff 0%, #00ccff 120%);
+  border-style: none;
+}
+.Paragraph {
+  line-height: 1.5em;
+  margin: 0;
+  text-align: center;
+  text-align: justify;
+}
+.ProgramLeft {
+  line-height: 1.5em;
+}
+
+/* -------------------------------------------------------------------------Flex */
+.FlexContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 0em;
+}
+.FlexItemOne {
+  margin-bottom: 2.5em;
+  width: 100%;
+}
+.FlexItemTwo {
+  margin-bottom: 2.5em;
+  width: 100%;
+}
+/* -------------------------------------------------------------------------Content */
+.Title {
+  text-align: center;
+  font-weight: 800;
+  background: -webkit-linear-gradient(0deg, #6000ff 0%, #00ccff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5em;
+}
+.Link {
+  color: #6000ff;
+  word-break: break-all;
+}
+a {
+  text-decoration: none;
+}
+/* -------------------------------------------------------------------------Footer */
+.Footer {
+  margin-top: 5em;
+  text-align: center;
+}
+.More {
+  display: none;
+}
+/* -------------------------------------------------------------------------Landing Page */
+#LandingPage {
+  background-image: url(Images/glenn-carstens-peters-P1qyEf1g0HU1-unsplash.jpg);
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+#GraphicDesign {
+  margin: 0;
+  padding-top: 5em;
+  text-align: center;
+  font-size: 1em;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: #eeeeee;
+}
+#Portfolio {
+  margin: 0em;
+  margin-top: -0.1em;
+  font-size: 2.8em;
+  text-align: center;
+  font-weight: 900;
+  letter-spacing: 0.05em;
+  background: -webkit-linear-gradient(0deg, #6000ff 0%, #00ccff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#CreatedBy {
+  margin: 0;
+  text-align: center;
+  font-size: 1em;
+  font-style: italic;
+  letter-spacing: 0.05em;
+  color: #aaaaaa;
+}
+#Signature {
+  display: none;
+}
+#AboutPortfolio {
+  padding: 0.5em 1em 0em;
+  color: #aaaaaa;
+  line-height: 1.4em;
+  text-align: left;
+}
+nav ul li {
+  list-style-type: none;
+  padding: 0.25em 0;
+}
+nav ul li a {
+  padding: 0.125em 1em;
+  color: #eeeeee;
+  font-weight: bold;
+  letter-spacing: 0.025em;
+  background: linear-gradient(to right, #6000ff 0%, #00ccff 200%);
+}
+/* -------------------------------------------------------------------------About */
+#Pozdrav {
+  font-size: 2em;
+  font-weight: 900;
+  margin: 0em;
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+#Pozdrav::after {
+  content: "Pozdrav!";
+  animation: animationone 9s ease-in-out infinite;
+}
+@keyframes animationone {
+  20% {
+    content: "Ko sam ja?";
+  }
+  40% {
+    content: "Ja sam...";
+  }
+  60% {
+    content: "Papić Dušan!";
+  }
+  80% {
+    content: "Grafički dizajner!";
+  }
+}
+#Avatar {
+  width: 10em;
+  border-radius: 50%;
+  box-shadow: 0em 0em 0em 1em #6000ff;
+}
+.Avatar {
+  text-align: center;
+}
+#AutorFooter {
+  margin-top: -2em;
+}
+.Button {
+  margin-top: 1em;
+  padding: 1em 0;
+  font-weight: bold;
+  border-radius: 1em;
+  color: #fff;
+  letter-spacing: 0.025em;
+  background: linear-gradient(to right, #6000ff 0%, #00ccff 200%);
+  display: inline-block;
+  width: 90%;
+}
+.Icons {
+  padding: 2em 0em 4em;
+}
+.Contact {
+  font-size: 1.5em;
+  margin: 0em 0.5em;
+  background: -webkit-linear-gradient(0deg, #6000ff -100%, #00ccff 200%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* -------------------------------------------------------------------------Logo Design */
+
+.FlexOrder {
+  flex-direction: column-reverse;
+}
+.LogoLeft {
+  width: 100%;
+}
+.LogoRight {
+  width: 100%;
+}
+.Other {
+  display: none;
+}
+
+/* -------------------------------------------------------------------------Photo Manipulation */
+.PhotoLeft {
+  width: 100%;
+  border-radius: 0.5em;
+  margin-top: -2em;
+}
+.PhotoRight {
+  width: 100%;
+  border-radius: 0.5em;
+  margin-top: -2em;
+}
+/* -------------------------------------------------------------------------Poster Design */
+/* -------------------------------------------------------------------------Icon Design */
+.IconContainer {
+  display: inline-block;
+  width: 8em;
+  height: 10em;
+  vertical-align: top;
+  text-align: center;
+}
+.IconsContainer {
+  text-align: center;
+}
+.Icon {
+  height: 5em;
+}
+/* -------------------------------------------------------------------------Footer */
+footer {
+  background: url(Images/glenn-carstens-peters-P1qyEf1g0HU1-unsplash.jpg);
+  background-size: cover;
+  background-position: bottom;
+  padding: 2em 0.5em;
+}
+.Credits {
+  text-align: center;
+  color: #eeeeee;
+}
+#DusanPapic {
+  display: inline-block;
+  font-weight: 600;
+}
+.SocialMedia {
+  display: none;
+}
+@media only screen and (max-height: 550px) {
+  nav {
+    display: none;
+  }
+}
